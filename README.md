@@ -61,24 +61,39 @@ This will display a simple Google Maps field with a marker in latitude 0 and lon
 Use this methods to enable Google Maps controls:
 
 `zoomControl(bool)` (default: false) displays de zoom controls allow the user to change it
+
 `mapTypeControl(bool)` (default: false) displays the map type selection control
+
 `scaleControl(bool)` (default: false)  displays the map scale control
+
 `streetViewControl(bool)` (default: false) displays the map StreetView control
+
 `fullScreenControl(bool)` (default: false) displays the full screen control
+
 `rotateControl(bool)` (default: false) displays the rotation control
+
 `searchBoxControl(bool)` (default: false) displays search box control to search for locations. Will update the field value upon selection
+
 `geolocationControl(bool)` (default: false) custom control to get the device geolocation and update the map position with it. It required the user to allow the device permission to access geolocation data
+
 `coordsBoxControl(bool)` (default: false) custom control that shows a text input with current value of the field in the format latitude,longitude
 
 ## Options
 
 `zoom(int)` (default: 1) takes an integer as value and sets the initial zoom of the map 
+
 `minHeight(string)` (default: 50vh) accepts a string to set the map height, must be a valid CSS min-height. Ex: 80vh, 30%, 50px
+
 `mapTypeId(string)` (default: roadmap) accepts a string: roadmap,satellite,hybrid, terrain
+
 `searchBoxPlaceholderText(string)` (default: Search Address) accepts a string to customize de search box placeholder text
+
 `locationButtonText(string)` (default: My location) accepts a string to customize de location button text
+
 `fixMarkerOnCenter(bool)` (default: false) when the user drags the map the marker pans to the center and updates the field value
+
 `default(array)` (default: ['lat' => 0,'lng' => 0]) sets the default value
+
 `defaultToMyLocation(bool)` (default: false) sets the default value to the current location
 
 ### On your filament form schema
